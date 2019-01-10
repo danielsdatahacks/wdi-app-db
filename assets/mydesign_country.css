@@ -1,0 +1,43 @@
+/*
+Colors that I have chosen:
+	- 'bg-main': '#2A2E32'
+	- 'bg-dark': '#1B1D20'	(background of menu)
+	- 'bg-light':'#85909C'  (taken for text and elements of plots)
+	- 
+*/
+/*Definition of colors*/
+:root {
+	--bg-main: #2A2E32;
+	--bg-dark: #1B1D20;
+	--bg-darklight: #24262A;
+	--bg-light: #85909C;
+}
+
+.controls_country_1 {
+	/*border: 0px var(--bg-dark) solid;*/
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 12px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.19)
+}
+
+.d_country_1 {
+	display:inline-block;
+	width:40%
+}
+
+.text_country_1 {
+	display:inline-block;
+	width:20%;
+	font-family:sans-serif;
+	color:var(--bg-light);
+	text-align:center;
+    font-size:20px;
+    padding-top: 30px
+}
+
+.d_country_2 {
+	display:inline-block;
+	width:40%
+}

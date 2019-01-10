@@ -1,0 +1,252 @@
+/*
+Colors that I have chosen:
+	- 'bg-main': '#2A2E32'
+	- 'bg-dark': '#1B1D20'	(background of menu)
+	- 'bg-light':'#85909C'  (taken for text and elements of plots)
+	- 
+*/
+/*Definition of colors*/
+:root {
+	--bg-main: #2A2E32;
+	--bg-dark: #1B1D20;
+	--bg-darklight: #24262A;
+	--bg-light: #85909C;
+}
+
+/*.inputClassName {
+	display:none
+}*/
+
+/*Style of headers in apps*/
+.head_style {
+	text-align:center;
+	padding:20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white
+}
+/*Style of normal text*/
+.text_style {
+	text-align:left;
+	color: var(--bg-light);
+	font-family:sans-serif;
+	font-size:16;
+	padding-bottom:10px
+}
+/*Controls (border)*/
+.controls_co2_1 {
+	/*border: 0px var(--bg-dark) solid;*/
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 12px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.19)
+}
+
+/*Dropdown d_c02_1*/
+.d_co2_1_text {
+	width:60%;
+	display:inline-block;
+    padding-bottom: 5px;
+	padding-left:0%;
+	text-align:left;
+	color: var(--bg-light);
+	font-family:sans-serif;
+	font-size:14px;
+}
+
+.d_co2_1 {
+	width:40%;
+	display:inline-block;
+	padding-left:0%;
+	clear:both
+}
+
+/*Button position b_co2_1*/
+.b_co2_1_text {
+	display:inline-block;
+    padding-bottom: 5px;
+	float:right;
+	/*padding-right:135px;*/
+	text-align:left;
+	color: var(--bg-light);
+	font-family:sans-serif;
+	font-size:14px;
+}
+
+.b_co2_1 {
+	display:inline-block;
+	float:right;
+	padding-right: 0%
+}
+
+/*Button position b_co2_2*/
+.b_co2_2 {
+	display:inline-block;
+	float:right;
+	padding-right:1%
+}
+
+
+/*For customized slider floating to the left*/
+.s_co2_1_text {
+	display:inline-block;
+	padding-left:0%;
+    width:60%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+	text-align:left;
+	color: var(--bg-light);
+	font-family:sans-serif;
+	font-size:14px;
+	clear:both
+}
+
+.slider_left {
+	width:40%;
+	display:inline-block;
+	padding-top:5px;
+	padding-left:15px;
+	clear:both
+}
+.s_co2_2_text {
+	display:inline-block;
+	float:right;
+	/*padding-right:92px;*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+	text-align:left;
+	color: var(--bg-light);
+	font-family:sans-serif;
+	font-size:14px;
+}
+
+.slider_right {
+	width:40%;
+	/*width: 135px*/
+	display:inline-block;
+	float:right;
+	padding-top:5px;
+	padding-right:26px
+}
+
+/*For customized button (active and inactive one. similar to menubuttons)*/
+.button_inactive {
+	background-color: var(--bg-main);
+ 	padding: 9px;
+ 	display:inline-block;
+ 	border: 1px var(--bg-dark) solid;
+ 	font-family: sans-serif;
+ 	color: black;
+ 	font-size:13px;
+}
+.button_inactive:hover {
+	background-color: var(--bg-darklight);
+	color:white;
+}
+.button_active {
+	font-size:13px;
+	background-color: var(--bg-dark);
+ 	padding: 9px;
+ 	display:inline-block;
+ 	border: 1px var(--bg-dark) solid;
+ 	font-family: sans-serif;
+ 	color: white;
+}
+
+/*Style of background*/
+.backgroundstyle {
+		background-color: var(--bg-main);
+		min-width: 100%;
+		height: 1500px;
+}
+
+
+/*Menu and button positioning*/
+.menu_button_position {
+	/*Make sure menu floats to the left and is always on top (z-index)*/
+	display:inline-block;
+	float:left;
+	z-index:100;
+	position: relative;
+}
+
+/*Design of menu*/
+.menustyle_off {
+	width: 0px;
+}
+.menustyle_on {
+	background-color: var(--bg-dark);
+	border: 1px var(--bg-dark) solid;
+	width: 158px;
+	box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Design of menuitems*/
+.inactive_menuitem {
+  background-color: var(--bg-main);
+  padding: 10px;
+  color: white;
+  font-family:sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.active_menuitem {
+/*changed dark --> main*/
+  background-color: var(--bg-main);
+  padding: 10px;
+  color: white;
+  font-family:sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.inactive_menuitem:hover {
+  background-color: var(--bg-darklight);
+  color: white;
+  font-family:sans-serif;
+  text-decoration: none;
+}
+
+
+/*Buttonstyle*/
+.buttonstyle {
+	background-color: var(--bg-main);
+	padding: 20px;
+}
+
+/*Style of apps that are inserted*/
+.appstyle {
+		/*To align items inside this div vertically!*/
+		display: inline-block;
+  		/*To make sure that the div itself is aligned vertically
+  		Make choose width 80% make it float to the right
+  		Then position it 10 percent further to the left*/
+		float:right;
+		position: relative;
+		left: -10%;
+    	width:80%;
+    	background-color: var(--bg-main);
+    	z-index: 1;
+}
+
+/*Adjust the modebar of plotly plot*/
+/*.modebar-group {
+	background-color: #85909C;
+}*/
+
+/*Change color of LaTeX font*/
+.katex {
+  color: white;
+}
+
+/*Change dash undo redo button style*/
+._dash-undo-redo {
+  display: none;
+}
+
+/*Get rid of plotlys modebar*/
+.modebar {
+  display: none;
+}
